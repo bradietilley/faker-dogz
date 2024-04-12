@@ -1,6 +1,6 @@
 # Dogz
 
-Your one-stop shop for fake avatars - but cats!
+Your one-stop shop for fake avatars - but dogs!
 
 ![Static Analysis](https://github.com/bradietilley/faker-dogz/actions/workflows/static.yml/badge.svg)
 ![Tests](https://github.com/bradietilley/faker-dogz/actions/workflows/tests.yml/badge.svg)
@@ -8,7 +8,7 @@ Your one-stop shop for fake avatars - but cats!
 
 ## Introduction
 
-FakerDogz is a lightweight PHP package designed to generate fake cat images that can be used for a variety of purposes, like avatars and other placeholders for web development *paw*poses.
+FakerDogz is a lightweight PHP package designed to generate fake dog images that can be used for a variety of purposes, like avatars and other placeholders for web development *paw*poses.
 
 All images are 1024*1024 60% quality JPEGs, resulting in 50-130KB per image.
 
@@ -30,11 +30,11 @@ It's insanely easy to use. Just run `dogz()` to spawn the Dogz faker singleton a
 **Get random paths**
 
 ```php
-dogz()->path();                             // string: /path/to/pics/cat_0037.jpg
-dogz()->path();                             // string: /path/to/pics/cat_0101.jpg
+dogz()->path();                             // string: /path/to/pics/dog_0037.jpg
+dogz()->path();                             // string: /path/to/pics/dog_0101.jpg
 ```
 
-Once all cat images are exhausted, it'll refeed and continue again with another random order.
+Once all dog images are exhausted, it'll refeed and continue again with another random order.
 
 
 **Get random contents**
@@ -53,16 +53,16 @@ dogz()->fileinfo();                         // \SplInfo: <fileinfo of /path/to/p
 ```
 
 
-**Get exact cat**
+**Get exact dog**
 
 Have a favorite? Get specific ones every time:
 
 ```php
-dogz()->get(24);                            // string: /path/to/pics/cat_0024.jpg
-dogz()->get(43);                            // string: /path/to/pics/cat_0043.jpg
+dogz()->get(24);                            // string: /path/to/pics/dog_0024.jpg
+dogz()->get(43);                            // string: /path/to/pics/dog_0043.jpg
 ```
 
-**Get count of cats**
+**Get count of dogs**
 
 ```php
 dogz()->count();                            // integer: 128
@@ -95,11 +95,11 @@ dogz()->pool();                             // array: <path1, path2, ..., path11
 
 ```php
 foreach (range(1, 100) as $i) {
-    dogz()->path();                         // iterates 100 cats
+    dogz()->path();                         // iterates 100 dogs
 }
 
-dogz()->loadWhenEmpty();                    // Won't do anything here as there's still cats in the pool.
-dogz()->load();                             // Will reload the pool of cats to be the full collection of cat images. 
+dogz()->loadWhenEmpty();                    // Won't do anything here as there's still dogs in the pool.
+dogz()->load();                             // Will reload the pool of dogs to be the full collection of dog images. 
 ```
 
 ## Roadmap
